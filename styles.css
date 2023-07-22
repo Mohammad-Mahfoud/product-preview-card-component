@@ -25,8 +25,7 @@ body{
 } 
 
 .container{
-            display: flex;
-            justify-content: space-between;
+           
            border: 1px hidden;
            height: 400px;
            width: 500px;
@@ -37,6 +36,8 @@ body{
 .img-container{
 
     border: 1px hidden;
+    display: flex;
+    justify-content: space-between;
          
 }
 
@@ -156,64 +157,150 @@ body{
          padding-right: 10px;
 }
 
-
-
-@media  only screen and (min-width: 641px) and  (max-width: 768px){
-
- .container {max-width: 600px}
-
-     
-
- 
-
- @media  only screen and (max-width: 641px){
+@media (max-width: 700px){
 
     .container{
-        min-width: auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
+     display: block;
+     height:650px;
+     width:350px;
+ 
+     margin-top: 50px;
+     border-radius: 15px;
+            
+ 
+ 
     }
-
-   .img-container{
-
-    width: 100%;
-    height: 350px;
-    background-image: url(images/mobile\ img.jpg);
-    border-radius: 10px 10px 0 0;
+     
+    .img-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     height: 650px;
+     width: 350px;
+     
+ }
+ .img-container img{
+     width:350px;
     
-   }
-
-   .description{
-    width: 100%;
-    row-gap: 12px;
-    padding: 25px;
-    border-radius: 0 0 10px 10px;
-
-   }
-   .perf-name{
-
-        font-size: 32px;
-        line-height: 1;
-   }
-
-   .par1, .par2, .par3, .par4{
-
-        width: 95%;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        line-height: 1.7;
-        font-size: 12px;
-   }
-   .btn{margin: 10px;}
-
-
-
+ }
+ .img{
+      content: url(images/mobile\ img.jpg);
+      border-radius: 15px 15px 1px 1px;
+ }
+ 
+ .btn{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 250px;
+ }
+ .btn:hover{
+              background-color: var(--Very-dark-blue);
  }
 
+ .description{
+    display: block;
+
+ }
+ .h3{
+    font-size: 11px;
+    padding-top: 30px;
+
+    padding-left: 40px;
+    font-family: 'Montserrat';
+    color: var(--Dark-grayish-blue);
+}
+
+.perf-name{
+          margin-top: 20px;
+          margin-left: 20px;
+           font-size: 18px;
+          font-family: 'Fraunces';
+          
+          text-indent: 5px;
+          
+          
+}
+
+
+.par1{
   
+  font-size: 14px;
+  font-family:'Montserrat';
+  padding-right: 15px;
+  color: var(--Dark-grayish-blue);
+  padding-top: 20px;
+  text-indent: 15px;
+}
+
+.par2{
+   
+  font-size: 14px;
+  font-family:'Montserrat';
+  padding-right: 15px;
+  color: var(--Dark-grayish-blue);
+  padding-top: 5px;
+  text-indent: 15px;
+ 
+ 
+}
+
+.par3{
+   
+  font-size: 14px;
+  font-family:'Montserrat';
+  padding-right: 15px;
+  color: var(--Dark-grayish-blue);
+  padding-top: 5px;
+  text-indent: 15px;
+ 
+ 
+}
+
+.par4{
+   
+  font-size: 14px;
+  font-family:'Montserrat';
+  padding-right: 15px;
+  color: var(--Dark-grayish-blue);
+  padding-top: 5px;
+  text-indent: 15px;
    
 }
+
+.prices{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 30px;
+       margin-left: 30px;
+       margin-bottom: 20px;
+}
+
+.main-price{
+           font-family: 'Fraunces';
+
+           font-size: 25px;
+
+           color: var(--Dark-cyan);
+}
+
+.pre-price{
+              padding-right: 170px;
+              padding-top: 9px;
+              font-size: 11px;
+              color: var(--Dark-grayish-blue);
+              font-family:'Montserrat';
+
+              text-decoration: line-through;
+
+}
+
+ 
+ 
+ 
+ }
+
+
+
 
 
